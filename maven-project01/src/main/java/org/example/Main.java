@@ -4,6 +4,6 @@ package org.example;
 // 点击装订区域中的 <icon src="AllIcons.Actions.Execute"/> 图标。
 public class Main {
     static void main() {
-
+        System.out.println("Hello world!");
     }
 }

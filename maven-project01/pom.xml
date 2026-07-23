@@ -13,7 +13,6 @@
         <maven.compiler.target>26</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-
     <!--配置依赖-->
     <dependencies>
         <dependency>
@@ -29,7 +28,7 @@
             </exclusions>
         </dependency>
 
-
+        <!--junit依赖-->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter</artifactId>
