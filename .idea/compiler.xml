@@ -10,6 +10,7 @@
         <module name="maven-project01" />
         <module name="maven-project02" />
         <module name="maven-project03" />
+        <module name="jdbc-demo" />
         <module name="springboot" />
       </profile>
       <profile name="Annotation profile for springboot1" enabled="true">
@@ -18,14 +19,25 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
         </processorPath>
         <module name="springboot1" />
+      </profile>
+      <profile name="Annotation profile for springboot-mybatis" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.46/lombok-1.18.46.jar" />
+        </processorPath>
+        <module name="springboot-mybatis" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="springboot" options="-parameters" />
+      <module name="springboot-mybatis" options="-parameters" />
       <module name="springboot1" options="-parameters" />
     </option>
   </component>
