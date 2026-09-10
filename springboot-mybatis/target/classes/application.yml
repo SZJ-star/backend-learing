@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: springboot-mybatis
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://59.110.90.98:3306/ssmy
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 617620
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*.xml
+
+
